@@ -1,4 +1,11 @@
-﻿body {
+﻿@font-face {
+    font-family: dogica;
+    src: url('./dogicapixel.ttf');
+    font-weight:400;
+    font-weight:normal;
+}
+
+body {
     margin: 0;
 }
 

@@ -2,9 +2,12 @@
     "compilerOptions": {
         "target": "es5",
         "moduleResolution": "node",
-        "module": "CommonJS",
-        "strict": true,
-        "sourceMap": true
+        "sourceMap": true,
+        "baseUrl": "./src",
+        "outDir": "dist",
+        "paths": {
+            "@core": ["core"]
+        }
     },
     "include": [
         "./src/**/*"
