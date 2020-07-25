@@ -2,7 +2,10 @@
 
 A Phaser 3 TypeScript Template
 
-Modeled after [Phaser 3 Project Template](https://github.com/photonstorm/phaser3-project-template)
+Forked from [phaser3-typescript-template](https://github.com/wtravO/phaser3-typescript-template)
+
+Adds file loader, tsconfigpaths, and removes files that I didn't want.
+Photomstorm's original [Phaser 3 TypeScript Project Template](https://github.com/photonstorm/phaser3-typescript-project-template) works, but was really slow to recompile the scripts and source maps didn't work properly with rollup. Many thanks to [wtrav0](https://github.com/wtravO) for the original repository this was forked from, I was having many issues trying to set this up by myself.
 
 ### Requirements
 
