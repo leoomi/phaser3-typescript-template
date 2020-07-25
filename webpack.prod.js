@@ -22,6 +22,10 @@ module.exports = {
             {
                 test: [ /\.vert$/, /\.frag$/ ],
                 use: 'raw-loader'
+            },
+            {
+                test: /\.(gif|png|jpe?g|svg|xml)$/i,
+                use: "file-loader"
             }
         ]
     },
@@ -38,7 +42,8 @@ module.exports = {
         }
     },
     resolve: {
-        extensions: [ '.tsx', '.ts', '.js' ]
+        extensions: [ '.tsx', '.ts', '.js' ],
+        plugins: [new TsconfigPathsPlugin({ configFile: "./tsconfig.json" })]
     },
     stats: false,
     plugins: [
@@ -50,13 +55,13 @@ module.exports = {
         new CopyWebpackPlugin(
         [
             {
-                from: './assets',
-                to: './assets',
+                from: './app.css',
+                to: './app.css',
                 force: true
             },
             {
-                from: './app.css',
-                to: './app.css',
+                from: './dogicapixel.ttf',
+                to: './dogicapixel.ttf',
                 force: true
             }
         ]),
